@@ -45,10 +45,11 @@ a:hover{
     color: black;
 }
 .yellow{
-    height: 350px;
-    background-color: #e1d67a;
     margin-bottom: 15px;
+    
+    
 }
+
 
 
 .clearfix::after{
@@ -96,4 +97,9 @@ footer{
     background-color: #abcfe7;
     height: 300px;
     
+}
+
+.debug .yellow{
+    height: 400px;
+    background-image: url("img/banner.jpg");
 }
