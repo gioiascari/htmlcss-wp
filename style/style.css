@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .container{
     margin: 15px auto;
     width: 70%;
@@ -44,19 +50,18 @@ li a{
 a:hover{
     color: black;
 }
+
 .yellow{
     margin-bottom: 15px;
-    
-    
+    height: 400px;
+    width: auto;
+    border: 2px solid black;
+    display: block;
+    background-image: url("img/banner.jpg");    
 }
 
 
 
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
-}
 main{
     padding-bottom: 15px;
 }
@@ -83,6 +88,8 @@ footer{
     margin-top: 15px;
     height: 50px;
     background-color: #8801fe;
+
+
 }
 .debug main{
     background-color: #0087ff;
@@ -99,7 +106,3 @@ footer{
     
 }
 
-.debug .yellow{
-    height: 400px;
-    background-image: url("img/banner.jpg");
-}
