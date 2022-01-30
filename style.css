@@ -7,11 +7,12 @@
 }
 body{
     background-color: goldenrod;
+    
 }
 .clearfix::after{
     content: "";
     clear: both;
-    display: table;
+   
 }
 .logo,
 .yellow,
@@ -22,6 +23,9 @@ body{
     margin: 15px auto;
     width: 70%;
 }
+
+
+
 
 
 
@@ -97,33 +101,73 @@ p{
     
 }
 main{
-    padding-bottom: 15px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
     margin-top: 10px;
+        background-color: black;
+        
+    
 }
-
 
 .col{
-    float: left;
-    width: 25%; 
-          
+    width: auto;
 }
-
-
-
-.big-col{
-    
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 46%;
-    background-color: rgba(0,0,0,0.2);
-    
+.col-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    vertical-align: middle;
+    width: 30%;
+    padding: 10px;
     
 }
 
-.overlay{
-    background-color: turquoise;
+.col-container-middle{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    vertical-align: middle;
+    width: 10%;
+    padding: 10px;
+
+}
+
+.big-col img{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.col img{
+    display: block;
+    height: auto;
+    margin: 0 auto;
     width: 100%;
 }
+
+.text{
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,25 +201,16 @@ footer{
 
 
 .debug .col{
-    background-image: url("img/img-1.jpg");
-    background-size: cover;
-    background-position: center;
+   
+    background-color: red;
     height: 150px;
     border-radius: 10px;
     
 }
 .debug .big-col{
-    background-image: url("img/banner-2.jpg");
-    background-size: cover;
-    background-position: center;
     
-
-}
-
-.debug .col-2{
-    background-image: url("img/img-5.jpg");
-    background-size: cover;
-    background-position: center;
+    height: 150px;
+    
 
 }
 
@@ -186,10 +221,7 @@ footer{
     
 }
 
-.col-text{
-    height: 300px;
-    border:2px solid black;
-}
+
 
 
 
