@@ -120,12 +120,25 @@ main{
 
 .col h3{
     margin: 10px 0px;
+    color: black;
+
+}
+
+.col p{
+    color: gray;
 }
 
 .img-left{
     background-image: url("./img/img-1.jpg");
 
 }
+
+.img-center{
+    background-image: url("./img/banner-2.jpg");
+
+}
+
+
 .img-right{
     background-image: url("./img/img-3.jpg");
 
@@ -144,9 +157,9 @@ main{
 }
 
 footer{
-    margin-top: 15px;
     height: 50px;
     text-align: center;
+    
 
 
 }
@@ -159,20 +172,9 @@ footer{
 }
 
 
-.debug .col{
-    background-color: #abcfe7;
-    height: 400px;
-    
-}
 
-.debug main{
-    background-color: #0087ff;
-    
-}
-.debug .inner-header{
-    height: 100px;
-    background: lightblue;
-}
+
+
 .debug .big-col{
     
     height: 150px;
